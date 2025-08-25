@@ -1,10 +1,11 @@
 #pragma once
-#include <iostream>
-#include <iomanip>
-#include "clsScreen.h"
-#include "clsInputValidate.h"
+#include<iostream>
+#include<iomanip>
+#include"clsScreen.h"
+#include"clsInputValidate.h"
 #include"clsDepositScreen.h"
 #include"clsWithdrawScreen.h"
+#include"clsTotalBalanceScreen.h"
 
 class clsTransactionsScreen :protected clsScreen
 {
@@ -34,7 +35,7 @@ private:
 
     static void _ShowTotalBalancesScreen()
     {
-
+        clsTotalBalancesScreen::ShowTotalBalance();
     }
 
     static void _GoBackToTransactionsMenu()
@@ -82,7 +83,6 @@ private:
     }
 
 public:
-
 
     static void ShowTransactionsMenu()
     {
