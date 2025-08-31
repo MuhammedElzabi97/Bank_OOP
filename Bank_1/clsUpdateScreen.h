@@ -51,6 +51,11 @@ public:
 
 	static void ShowUpdateClientScreen()
 	{
+		if (!CheckAccessRights(clsUser::enPermissions::pUpdateClient))
+		{
+			return;
+		}
+
 		_DrawScreenHeader("\tUpdate Client Screen");
 
 		string AccountNumber = "";
