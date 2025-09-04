@@ -10,7 +10,7 @@ class clsLoginRegister :protected clsScreen
 {
 private:
 
-    static void PrintLoginRegisterRecordLine(clsUser::stLoginRegisterRecord LoginRegisterRecord)
+    static void _PrintLoginRegisterRecordLine(clsUser::stLoginRegisterRecord LoginRegisterRecord)
     {
 
         cout << setw(8) << left << "" << "| " << setw(35) << left << LoginRegisterRecord.DateTime;
@@ -52,7 +52,7 @@ public:
             for (clsUser::stLoginRegisterRecord Record : vLoginRegisterRecord)
             {
 
-                PrintLoginRegisterRecordLine(Record);
+                _PrintLoginRegisterRecordLine(Record);
                 cout << endl;
             }
 
