@@ -78,7 +78,7 @@ public:
 		{
 		case  clsBankClient::enSaveResults::svSucceeded:
 		{
-			cout << "\nAccount Addeded Successfully :-)\n";
+			cout << "\nAccount Added Successfully :-)\n";
 			_PrintClient(NewClient);
 			break;
 		}

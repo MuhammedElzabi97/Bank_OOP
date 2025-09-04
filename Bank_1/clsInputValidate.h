@@ -26,8 +26,6 @@ public:
 
 	}
 
-
-
 	static bool IsNumberBetween(double Number, double From, double To)
 	{
 		if (Number >= From && Number <= To)
